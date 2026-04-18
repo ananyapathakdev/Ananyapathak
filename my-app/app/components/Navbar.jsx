@@ -5,10 +5,10 @@ const Navbar = ({ isDark, setIsDark }) => {
   const navItems = ['Home', 'Blog', 'About', 'Projects', 'Contact'];
 
   return (
-    /* FIXED: 'absolute' added instead of 'fixed'. 
-       Isse ye sirf Hero section ke upar rahega aur scroll karne par upar chala jayega. */
-    <nav className="absolute top-4 left-0 w-full z-50 flex justify-center px-6">
-      <div className="flex items-center justify-between w-full max-w-7xl px-6 py-2 bg-white/10 dark:bg-black/20 backdrop-blur-xl border border-black/5 dark:border-white/10 rounded-full shadow-2xl transition-all duration-500">
+    /* FIXED: Changed 'absolute' to 'fixed' so it stays while scrolling. 
+       Added 'z-[100]' to ensure it stays above all other content. */
+    <nav className="fixed top-4 left-0 w-full z-[100] flex justify-center px-6 pointer-events-none">
+      <div className="flex items-center justify-between w-full max-w-7xl px-6 py-2 bg-white/70 dark:bg-black/40 backdrop-blur-xl border border-black/5 dark:border-white/10 rounded-full shadow-2xl transition-all duration-500 pointer-events-auto">
         
         {/* Left: Photo & Name */}
         <div className="flex items-center gap-3">
@@ -43,9 +43,9 @@ const Navbar = ({ isDark, setIsDark }) => {
           onClick={() => setIsDark(!isDark)}
           className="relative w-14 h-7 bg-gray-200 dark:bg-white/10 rounded-full p-1 transition-all border border-black/5 dark:border-white/10"
         >
-          <div className={`w-5 h-5 rounded-full transition-all duration-500 transform 
-            ${isDark ? 'translate-x-7 bg-black' : 'translate-x-0 bg-yellow-400'}`}>
-            <span className="text-[10px] flex items-center justify-center h-full">
+          <div className={`w-5 h-5 rounded-full transition-all duration-500 transform flex items-center justify-center
+            ${isDark ? 'translate-x-7 bg-zinc-900' : 'translate-x-0 bg-yellow-400'}`}>
+            <span className="text-[10px]">
                {isDark ? '🌙' : '☀️'}
             </span>
           </div>

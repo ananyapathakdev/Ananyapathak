@@ -7,6 +7,9 @@ import Services from "./components/Services";
 import Blog from './components/Blog';
 import Contact from "./components/Contact";
 
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+
 // src/app/page.tsx
 export default function Home() {
   const [isDark, setIsDark] = useState(true);
@@ -16,9 +19,11 @@ export default function Home() {
       <Navbar isDark={isDark} setIsDark={setIsDark} />
       <Hero />
       <AboutMe />
+      <Projects />
       <Services />
       <Blog />
       <Contact/>
+      <Footer/>
     </main>
   );
 }
