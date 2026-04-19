@@ -62,7 +62,7 @@ const Services = () => {
               <div className="relative">
                 {/* Floating ID Number */}
                 <span className="absolute -top-10 -left-6 text-xs font-black text-[#5b51ff]/30 opacity-0 group-hover:opacity-100 transition-all duration-500 tracking-widest">
-                  // {service.id}
+                  {`// ${service.id}`}
                 </span>
                 
                 <div className="flex flex-col gap-8">

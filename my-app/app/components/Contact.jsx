@@ -31,7 +31,7 @@ const Contact = () => {
       } else {
         setState({ submitting: false, succeeded: false, error: true });
       }
-    } catch (error) {
+    } catch {
       setState({ submitting: false, succeeded: false, error: true });
     }
   };

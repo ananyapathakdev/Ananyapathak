@@ -28,11 +28,11 @@ const AboutMe = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 mb-48">
           <div className="space-y-10">
             <h3 className="text-4xl font-bold text-black dark:text-white tracking-tight leading-tight">
-              An Engineer who builds with <br/> <span className="text-[#5b51ff]">Conversion</span> in mind.
+              An Engineer&apos;s who builds with <br/> <span className="text-[#5b51ff]">Conversion</span> in mind.
             </h3>
             <p className="text-gray-500 dark:text-gray-400 text-xl leading-relaxed max-w-lg">
-              I specialize in building lightning-fast interfaces. My code isn't just functional; 
-              it's optimized for search-first performance and high accessibility.
+              I specialize in building lightning-fast interfaces. My code isn&apos;t just functional; 
+              it&apos;s optimized for search-first performance and high accessibility.
             </p>
           </div>
           

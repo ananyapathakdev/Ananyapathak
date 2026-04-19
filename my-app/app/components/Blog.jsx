@@ -84,7 +84,7 @@ const Blog = () => {
         <div className="mt-20 p-16 rounded-[60px] bg-black text-white flex flex-col lg:flex-row justify-between items-center gap-10 border border-white/5 shadow-2xl shadow-purple-500/5">
            <div className="space-y-3 text-center lg:text-left">
               <p className="text-3xl font-black tracking-tight uppercase">Have a project in mind?</p>
-              <p className="text-gray-400 text-lg font-medium">Let's build a high-performance engine for your brand.</p>
+              <p className="text-gray-400 text-lg font-medium">Let&apos;s build a high-performance engine for your brand.</p>
            </div>
            <a href="#contact" className="px-12 py-6 bg-white text-black rounded-full font-black uppercase tracking-[0.2em] text-[10px] hover:bg-[#5b51ff] hover:text-white transition-all transform hover:scale-105 active:scale-95 shadow-xl">
               Start a Conversation

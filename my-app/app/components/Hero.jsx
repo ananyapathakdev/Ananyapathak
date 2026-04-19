@@ -16,7 +16,7 @@ export default function Hero() {
       setSkillIndex((prev) => (prev + 1) % skills.length);
     }, 3000); 
     return () => clearInterval(timer);
-  }, []);
+  }, [skills.length]);
 
   return (
     <div className="bg-white dark:bg-black transition-colors duration-500">
@@ -58,7 +58,7 @@ export default function Hero() {
             </div>
             
             <p className="text-gray-500 dark:text-gray-400 font-medium text-lg max-w-xl">
-           Engineering digital experiences where speed meets strategy. I combine modern frontend frameworks with technical SEO to build web applications that aren't just fast—they’re discoverable. From React architectures to data-driven growth, I turn complex code into high-ranking digital assets.
+           Engineering digital experiences where speed meets strategy. I combine modern frontend frameworks with technical SEO to build web applications that aren&apos;t just fast—they&apos;re discoverable. From React architectures to data-driven growth, I turn complex code into high-ranking digital assets.
             </p>
             
             <div className="pt-8 flex gap-4">
