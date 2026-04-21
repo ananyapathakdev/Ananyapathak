@@ -1,7 +1,13 @@
 "use client";
 import React from 'react';
 
-const Navbar = ({ isDark, setIsDark }) => {
+// TypeScript interface for props
+interface NavbarProps {
+  isDark: boolean;
+  setIsDark: (value: boolean) => void;
+}
+
+const Navbar = ({ isDark, setIsDark }: NavbarProps) => {
   const navItems = ['Home', 'Blog', 'About', 'Projects', 'Contact'];
 
   return (
@@ -40,6 +46,7 @@ const Navbar = ({ isDark, setIsDark }) => {
 
         {/* Right: Toggle Button */}
         <button 
+          type="button"
           onClick={() => setIsDark(!isDark)}
           className="relative w-14 h-7 bg-gray-200 dark:bg-white/10 rounded-full p-1 transition-all border border-black/5 dark:border-white/10"
         >

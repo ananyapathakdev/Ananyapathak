@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, FormEvent } from 'react';
 
 const Contact = () => {
   const [state, setState] = useState({
@@ -8,15 +8,15 @@ const Contact = () => {
     error: false
   });
 
-  const handleSubmit = async (e) => {
+  // e: FormEvent<HTMLFormElement> add kiya hai TypeScript errors hatane ke liye
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setState({ ...state, submitting: true });
     
-    const form = e.target;
+    const form = e.currentTarget; // target ki jagah currentTarget use karna TS mein safe hai
     const formData = new FormData(form);
 
     try {
-      // REPLACE 'YOUR_FORMSPREE_ID' with your actual ID from Formspree
       const response = await fetch("https://formspree.io/f/xpqkdvdl", {
         method: "POST",
         body: formData,
@@ -98,7 +98,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Right Side: Form with functional logic */}
+          {/* Right Side: Form */}
           <div className="relative">
             <div className="absolute inset-0 bg-[#5b51ff]/5 blur-[120px] rounded-full pointer-events-none"></div>
             

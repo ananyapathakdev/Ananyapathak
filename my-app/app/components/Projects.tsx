@@ -1,8 +1,18 @@
 "use client";
 import React from 'react';
 
-const Projects = () => {
-  const projectList = [
+// 1. Interface define karo taaki TypeScript ko data structure samajh aaye
+interface Project {
+  title: string;
+  category: string;
+  description: string;
+  tags: string[];
+  stats: string;
+}
+
+const Projects: React.FC = () => {
+  // 2. Array ko type assign karo
+  const projectList: Project[] = [
     {
       title: "Video Production Platform",
       category: "Frontend Engineering",
@@ -30,7 +40,6 @@ const Projects = () => {
     <section id="projects" className="relative py-40 px-6 bg-transparent transition-colors duration-700">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header: Swapped UI/UX for FRONTEND ENGINEER */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <div className="space-y-4">
             <h2 className="text-[#5b51ff] font-black uppercase tracking-[0.4em] text-[10px]">Technical Portfolio</h2>
@@ -43,7 +52,6 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Project Cards (Increased spacing for better flow) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projectList.map((project, index) => (
             <div key={index} className="group p-10 rounded-[55px] bg-white dark:bg-zinc-900/40 border border-black/[0.03] dark:border-white/[0.05] hover:border-[#5b51ff]/30 transition-all duration-500 hover:scale-[1.02]">

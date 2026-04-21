@@ -2,28 +2,27 @@
 import React, { useState } from 'react';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import AboutMe from "./components/AboutMe"
+import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import Blog from './components/Blog';
 import Contact from "./components/Contact";
-
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 
-// src/app/page.tsx
 export default function Home() {
-  const [isDark, setIsDark] = useState(true);
+  // TypeScript automatically infers that this is a boolean
+  const [isDark, setIsDark] = useState<boolean>(true);
 
   return (
-    <main className={`${isDark ? 'dark' : ''} min-h-screen w-full transition-colors duration-500 bg-white dark:bg-[#050505]`}>
+    <main className={`${isDark ? "dark" : ""} min-h-screen w-full transition-colors duration-500 bg-white dark:bg-[#0a0a0a]`}>
       <Navbar isDark={isDark} setIsDark={setIsDark} />
       <Hero />
       <AboutMe />
-      <Projects />
       <Services />
+      <Projects />
       <Blog />
-      <Contact/>
-      <Footer/>
+      <Contact />
+      <Footer />
     </main>
   );
 }
