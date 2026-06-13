@@ -20,7 +20,7 @@ const Navbar = ({ isDark, setIsDark }: NavbarProps) => {
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-gray-400 dark:border-white/20">
             <img 
-              src="/your-photo.jpg" 
+              src="/me .jpeg" 
               alt="Ananya Pathak" 
               className="w-full h-full object-cover"
               onError={(e) => { e.currentTarget.src="https://ui-avatars.com/api/?name=Ananya+Pathak"; }}

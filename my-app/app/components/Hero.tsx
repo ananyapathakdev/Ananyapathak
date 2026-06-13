@@ -77,7 +77,7 @@ export default function Hero() {
             <div className="relative p-1.5 rounded-full bg-gradient-to-tr from-purple-500 via-blue-400 to-emerald-400 shadow-2xl">
               <div className="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-[6px] border-white dark:border-black bg-gray-100 dark:bg-zinc-900">
                 <img 
-                  src="/your-photo.jpg" 
+                  src="/me .jpeg" 
                   className="w-full h-full object-cover scale-110"
                   alt="Ananya Pathak"
                   onError={(e) => { e.currentTarget.src = "https://ui-avatars.com/api/?name=Ananya+Pathak&background=0D8ABC&color=fff&size=512"; }}
