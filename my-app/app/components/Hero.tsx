@@ -14,7 +14,7 @@ export default function Hero() {
   ];
 
   const downloadResume = () => {
-    const resumePath = '/resumes/Ananya-Pathak-Resume.pdf';
+  const resumePath = '/Ananya-Pathak-Resume.pdf';
     const link = document.createElement('a');
     link.href = resumePath;
     link.download = 'Ananya-Pathak-Resume.pdf';

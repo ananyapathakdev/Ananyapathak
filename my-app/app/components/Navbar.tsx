@@ -12,7 +12,7 @@ const Navbar = ({ isDark, setIsDark }: NavbarProps) => {
 
   const downloadResume = () => {
     // Resume PDF should be placed at: /public/resumes/Ananya-Pathak-Resume.pdf
-    const resumePath = '/resumes/Ananya-Pathak-Resume.pdf';
+    const resumePath = '/Ananya-Pathak-Resume.pdf';
     const link = document.createElement('a');
     link.href = resumePath;
     link.download = 'Ananya-Pathak-Resume.pdf';
