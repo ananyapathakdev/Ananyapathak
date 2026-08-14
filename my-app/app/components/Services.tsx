@@ -47,7 +47,7 @@ const Services = () => {
           </div>
           <h2 className="text-5xl md:text-8xl font-black text-black dark:text-white uppercase leading-[0.9] tracking-tighter">
             Engineering <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5b51ff] to-cyan-400 italic">Growth Engines.</span>
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-[#5b51ff] to-cyan-400 italic">Growth Engines.</span>
           </h2>
         </div>
 

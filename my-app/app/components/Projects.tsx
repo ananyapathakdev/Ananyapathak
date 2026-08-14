@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projectList.map((project, index) => (
-            <div key={index} className="group p-10 rounded-[55px] bg-white dark:bg-zinc-900/40 border border-black/[0.03] dark:border-white/[0.05] hover:border-[#5b51ff]/30 transition-all duration-500 hover:scale-[1.02]">
+            <div key={index} className="group p-10 rounded-[55px] bg-white dark:bg-zinc-900/40 border border-black/3 dark:border-white/5 hover:border-[#5b51ff]/30 transition-all duration-500 hover:scale-[1.02]">
               <div className="flex justify-between items-start mb-12">
                 <span className="text-[9px] font-black uppercase tracking-widest text-[#5b51ff] bg-[#5b51ff]/10 px-4 py-2 rounded-full border border-[#5b51ff]/10">
                   {project.category}

@@ -42,7 +42,7 @@ const Blog = () => {
           <h2 className="text-[#5b51ff] font-black uppercase tracking-[0.4em] text-[10px] mb-6 flex items-center gap-3">
              <span className="w-8 h-[1px] bg-[#5b51ff]"></span> Expertise & Journal
           </h2>
-          <h3 className="text-5xl md:text-8xl font-black text-black dark:text-white leading-[0.85] tracking-tighter uppercase">
+          <h3 className="text-5Nxl md:text-8xl font-black text-black dark:text-white leading-[0.85] tracking-tighter uppercase">
             CORE <br /> <span className="text-gray-100 dark:text-white/18">DISCIPLINES.</span>
           </h3>
         </div>
@@ -52,7 +52,7 @@ const Blog = () => {
           {insights.map((item, index) => (
             <div 
               key={index} 
-              className={`group p-10 rounded-[55px] bg-white dark:bg-zinc-900/40 border border-black/[0.03] dark:border-white/[0.05] ${item.color} transition-all duration-500 flex flex-col justify-between h-[420px] hover:scale-[1.02]`}
+              className={`group p-10 rounded-[55px] bg-white dark:bg-zinc-900/40 border border-black/3 dark:border-white/5 ${item.color} transition-all duration-500 flex flex-col justify-between h-[420px] hover:scale-[1.02]`}
             >
               <div>
                 <div className="flex justify-between items-start mb-10">

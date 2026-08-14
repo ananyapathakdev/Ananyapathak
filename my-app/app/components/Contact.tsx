@@ -8,6 +8,14 @@ const Contact = () => {
     error: false
   });
 
+  const downloadResume = () => {
+    const resumePath = '/resumes/Ananya-Pathak-Resume.pdf';
+    const link = document.createElement('a');
+    link.href = resumePath;
+    link.download = 'Ananya-Pathak-Resume.pdf';
+    link.click();
+  };
+
   // e: FormEvent<HTMLFormElement> add kiya hai TypeScript errors hatane ke liye
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -50,7 +58,7 @@ const Contact = () => {
               </h2>
               <h3 className="text-6xl md:text-8xl font-black text-black dark:text-white leading-[0.85] tracking-tighter uppercase">
                 READY TO <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400 italic">SCALE UP?</span>
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-400 italic">SCALE UP?</span>
               </h3>
             </div>
 
@@ -89,10 +97,13 @@ const Contact = () => {
                   </a>
                 </div>
                 <div className="group hidden sm:block">
-                  <p className="text-gray-400 font-bold uppercase text-[10px] tracking-widest mb-3">Location</p>
-                  <p className="text-black dark:text-white font-black text-lg uppercase tracking-tight">
-                    Delhi
-                  </p>
+                  <p className="text-gray-400 font-bold uppercase text-[10px] tracking-widest mb-3">Resume</p>
+                  <button
+                    onClick={downloadResume}
+                    className="text-black dark:text-white font-black text-lg group-hover:text-emerald-400 transition-colors uppercase tracking-tight hover:underline"
+                  >
+                    Download ↓
+                  </button>
                 </div>
               </div>
             </div>
@@ -104,7 +115,7 @@ const Contact = () => {
             
             <form 
               onSubmit={handleSubmit}
-              className="relative z-10 p-10 md:p-14 rounded-[60px] bg-white dark:bg-zinc-900/40 border border-black/[0.03] dark:border-white/[0.05] shadow-2xl shadow-purple-500/5 backdrop-blur-md space-y-10"
+              className="relative z-10 p-10 md:p-14 rounded-[60px] bg-white dark:bg-zinc-900/40 border border-black/3 dark:border-white/5 shadow-2xl shadow-purple-500/5 backdrop-blur-md space-y-10"
             >
               <div className="space-y-8">
                 <div className="relative">
